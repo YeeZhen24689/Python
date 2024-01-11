@@ -1,0 +1,29 @@
+1
+-> Drip Drip Drip...
+-> The gloomy 
+-> Story 1
+-> You packed your own tent, welcoming your journey ahead.
+-> You scowered your bag for supplies, making a checklist of the items inside:
+Inv
+-> [Toggle it anytime with the enter of a lowercase i].
+-> This is the world map.
+Map
+-> These are your personal statistics[Toggle it with the enter of a lowercase s].
+Stat
+-> One thing is for certain, we better get going.
+End1
+
+2
+-> The second part
+-> The gloomy 
+-> Story 1
+-> You packed your own tent, welcoming your journey ahead.
+-> You scowered your bag for supplies, making a checklist of the items inside:
+Inv
+-> [Toggle it anytime with the enter of a lowercase i].
+-> This is the world map.
+Map
+-> These are your personal statistics[Toggle it with the enter of a lowercase s].
+Stat
+-> One thing is for certain, we better get going.
+End2

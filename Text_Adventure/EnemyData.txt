@@ -1,0 +1,74 @@
+Wombie
+|--------------[ Wombie ]--------------|
+|                _____                 |
+|                |X|X|                 |
+|              _ |_-_|                 |
+|               |--|--_                |
+|                  |   |               |
+|                 / \                  |
+|                /   \                 |
+|      HP-(XXXXXXXXXXXXXXXXXX)         |
+|--------------------------------------|
+EndWombie
+Golem
+|--------------[ Golem ]---------------|
+|                _____                 |
+|                |___|                 |
+|                | O |                 |
+|          ______|___|________         |
+|         /        O          \        |
+|        /   |    oOo     |    \       |
+|       /    |   o   o    |     \      |
+|      HP-(XXXXXXXXXXXXXXXXXX)   |     |
+|--------------------------------------|
+EndGolem
+Slime
+|--------------[ Slime ]---------------|
+|                                      |
+|                                      |
+|                                      |
+|                                      |
+|              \  OOO                  |
+|               \O.O.O                 |
+|                 OOO                  |
+|      HP-(XXXXXXXXXXXXXXXXXX)         |
+|--------------------------------------|
+EndSlime
+Hellicopeter
+|-----------[ Hellicopeter ]-----------|
+|                                      |
+|           _______o_______            |
+|                  |                   |
+|      /|\     o---0---o               |
+|    |--O------|{o} {o}|               |
+|      \|/     |  \_/  |               |
+|              |_______|               |
+|      HP-(XXXXXXXXXXXXXXXXXX)         |
+|--------------------------------------|
+EndHellicopeter
+The Undead Golaith2
+|XXXXXXXXXXX[ The Undead Golaith ]XXXXXXXXXXX|
+|        ____      _________                 |
+|       |X  X|    | O     O |                |
+|       |_ -_|    | O     O |                |
+|          \ \_ __|_O_____O_|______          |
+|           \/      |         \     \__      |
+|           /   |           \ /  \  \  \     |
+|          /    |           / |  |  |  |     |
+|         |     |           | |  |  |  |     |
+|         HP-[XXXXXXXXXXXXXXXXXX]            |
+|XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX|
+EndThe Undead Golaith2
+The Undead Golaith1
+|XXXX  XXXXX[ Thb Nndrtd G0lre#h ] XXXX  XXX |
+|        _____      |_______                 |
+|       |H   H|    | O     O |                
+        |_\_/_|  -O  O- O  |O                |
+           \ \_ __|_O___|_O_|______          |
+|           \/      |     |   \     \__       
+|        ___|   |   | |.       \ /  \  \  \   |
+|       /       |           / |  |  |  |     |
+       |        |           | |  | 0   |    |
+|         HP-(XXXXXXXXXXXXXXXXXX) o   o      |
+|XXXXXX  XXXXXXXXXXXXXXXXX  XXXXXXoXXoXXXXXXX|
+EndThe Undead Golaith1

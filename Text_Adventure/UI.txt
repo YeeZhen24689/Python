@@ -1,0 +1,38 @@
+Check
+|--------------------------------------|
+    [ Enemy ]
+
+    Attack:
+    Health:
+    Weight:
+    Attacks a Turn:
+                                        
+EndCheck
+Weapon
+|--------------[ Weapon ]--------------|
+                                        
+    Damage:
+    Weight:
+    Attribute:
+    Attacks per turn:
+                                        
+|--------------[ Weapon ]--------------|
+EndWeapon
+Player
+|-----------[ Name ]-----------|
+                                        
+    Max Hp:
+    Attack:
+    Weapon:
+    Weight:
+    Attacks a Turn:
+                                        
+|-----------[ Name ]-----------|
+EndPlayer
+Inventory
+|----------------[ Bag ]----------------|
+                                        
+    
+                                        
+|----------------[ Bag ]----------------|
+EndInventory
