@@ -35,7 +35,7 @@ def hex2dec():
             number = hexdict[i]
         answerval += number * 16**(lenx-iterate)
         iterate += 1
-    print (answerval)
+    print (f"Your hex number is {answerval}.")
 
 
 def dec2bin():
@@ -53,12 +53,18 @@ def dec2bin():
         print(f"Your original denary number is {xnew}, its binary equivalent is {''.join(binconversion)}.")
 
 def main():
-    x = input("Which converter are your looking for? [d2b] [b2d] [h2b]")
-    if x == 'd2b':
+    option = ["Decimal to Binary","Binary to Decimal","Hexadecimal to Decimal"]
+    print ("---------------------------------------------")
+    print ("---Decimal, Binary, Hexadecimal Calculator---")
+    print ("---------------------------------------------")
+    for i in option:
+        print(f"        ({option.index(i)}) {i}")
+    x = input("Which converter are your looking for?")
+    if x == '0':
         dec2bin()
-    elif x ==  'b2d':
+    elif x ==  '1':
         bin2dec()
-    elif x == 'h2b':
+    elif x == '2':
         hex2dec()
     else:
         print("Not Valid")
