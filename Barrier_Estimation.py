@@ -75,43 +75,52 @@ def pointgenerator(current_x,current_y,x_estimate,y_estimate):
         error = 3 - dist
         print(error)
 
-    print(new_x-current_x[0])
-    print(new_y-current_y[0])
-    print(dist)
+    print(f"My distance is: {dist}.")
     
     return new_x,new_y
 
 x,y = np.array([3.,6.,9.]),np.array([1.5,1.5,1.5])
-x_estimate,y_estimate = np.array([]),np.array([])
 current_x,current_y = x[len(x)-3:],y[len(x)-3:]
-coefficients = quadratic_coefficient_generator(current_x,current_y)
 
-#Test Linspace#
+#Coefficient declaration#
+coefficients = quadratic_coefficient_generator(current_x,current_y)
+gradient, c = perpendicular_derivative(coefficients,current_x,current_y)
+new_x,new_y = distance(current_x,current_y,gradient,coefficients[0])
+
+#Estimation Declaration#
+x_estimate,y_estimate = np.array([]),np.array([])
+x_estimate,y_estimate = np.append(x_estimate,new_x[0:1]),np.append(y_estimate,new_y[0:1])
+
+#Visualiser#
 test_x = np.linspace(x[len(x)-3],x[len(x)-1],100)
 test_y = coefficients[0]*(test_x**2)+coefficients[1]*test_x+coefficients[2]
-#End Test Linspace#
+test_x2 = np.linspace(x[len(x)-3],x[len(x)-1],100)
+test_y2 = gradient[0]*test_x2 + c[1]
+test_x3 = np.linspace(x[len(x)-3],x[len(x)-1],100)
+test_y3 = -1/gradient[0]*test_x3 + (current_y[1] - current_x[1]*(-1/gradient[1]))
+#End Visualiser#
 
 plt.ion
 fig = plt.figure()
 axis = fig.add_subplot(111)
 line1 = axis.plot(x,y,'r')[0]
-line3 = axis.plot(test_x,test_y,marker='o')[0]
-
-gradient, c = perpendicular_derivative(coefficients,current_x,current_y)
-new_x,new_y = distance(current_x,current_y,gradient,coefficients[0])
-x_estimate,y_estimate = np.append(x_estimate,new_x[1:2]),np.append(y_estimate,new_y[1:2])
 line2 = axis.plot(x_estimate,y_estimate,'b')[0]
+line3 = axis.plot(test_x,test_y,'g')[0]
+line4 = axis.plot(test_x2,test_y2,'orange')[0]
+line5 = axis.plot(test_x3,test_y3,'purple')[0]
+point3 = axis.plot(x,y,'ro')[0]
+point4 = axis.plot(current_x[1],current_y[1],'bo')[0]
 plt.show(block=False)
 
-xcorrd = [12,15,17.5,19.5,20.5,21,21,20.5,19.5]
-ycorrd = [1.5,1.5,1,0,-1.5,-3,-4,-5.5,-7]
+xcorrd = [12,15,17.5,19.5,20.5,21,21,20.5,19.5,17.5,17,16]
+ycorrd = [1.5,1.5,1,0,-1.5,-3,-4,-5.5,-7,-8,-8.5,-9.5]
 
 #xcorrd = np.linspace(0,7,100)
 #ycorrd = -0.4*np.power(xcorrd,3)+1.9*np.power(xcorrd,2)+2.4*xcorrd
 
 for i in range(0,len(xcorrd)):
     plt.xlim([0, 25]) 
-    plt.ylim([-8, 4])
+    plt.ylim([-20, 5])
     x = np.append(x,float(xcorrd[i]))
     y = np.append(y,float(ycorrd[i]))
 
@@ -121,9 +130,13 @@ for i in range(0,len(xcorrd)):
 
     line1.remove()
     line2.remove()
+    point3.remove()
+    point4.remove()
 
     line1 = axis.plot(x,y,'r')[0]
     line2 = axis.plot(x_estimate,y_estimate,'b')[0]
+    point3 = axis.plot(new_x,new_y,'bo')[0]
+    point4 = axis.plot(current_x[1],current_y[1],'ro')[0]
 
     plt.show(block=False)
     plc = input("next")

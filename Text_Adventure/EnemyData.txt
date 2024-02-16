@@ -72,3 +72,42 @@ The Undead Golaith1
 |         HP-(XXXXXXXXXXXXXXXXXX) o   o      |
 |XXXXXX  XXXXXXXXXXXXXXXXX  XXXXXXoXXoXXXXXXX|
 EndThe Undead Golaith1
+The Forest Guardian3
+|XXXXXXXXXXX[ The Forest Guardian ]XXXXXXXXXX|
+|                    /-\                     |
+|                 __/_O_\__ |                |
+|                   |#|#|  -2-               |
+|                   |_-_|   |                |
+|                --/-| |-\--|                |
+|                 /  |_|  \                  |
+|                /__ / \ __\                 |
+|               |/ _/   \_ \|                |
+|         HP-{XXXXXXXXXXXXXXXXXX}            |
+|XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX|
+EndThe Forest Guardian3
+The Forest Guardian2
+|XXXXX{}XXX[ The Forest Guardian ]XXXXX{}XXXX|
+|   {}               /-\                {}   |
+|    {}             /_ _\              {}    |
+|      {}         __| O |__ \ | /       {}   |
+|     {}  /         |_ _|   --1--         {} |
+|         o        --| |--  / | \           {}
+|          o      /       \     |            |
+|    {}          /         \          {}     |
+{} {}           /           \  {} {}   {}    |
+|{} o     HP-[XXXXXXXXXXXXXXXXXX]  {} {}     |
+|XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX{}XXXX|
+EndThe Forest Guardian2
+The Forest Guardian1
+|XXXXX{}XXX[ The Forest Guardian?]XXXXX{}XXXX|
+|   {}               |#|#|              {}   |
+|    {}       _______|_-_|______    {}       |
+|      {}    /   o          o   \       {}   |
+|     {}    /                   {}        {} |
+|       {} /       _________ {}   \         {}
+|        {}        \_______{}      \         |
+|    {}  | {}       \_____/  {}     | {}     |
+{} {}    {}                    {} {}|  {}    |
+|{} o     HP-(XXXXXXXXXXXXXXXXXX)  {} {}     |
+|XXXXXXXX{}XXXXXXXXXXXXXXXXXXXXXXXXXXXX{}XXXX|
+EndThe Forest Guardian1

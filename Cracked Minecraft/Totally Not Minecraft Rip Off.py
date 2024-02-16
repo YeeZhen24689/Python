@@ -4,10 +4,10 @@ import time
 
 app = Ursina()
 
-grass_texture = load_texture('C:/Users/khooy/OneDrive/Documents/Python/Assets/Textures/Grass_Block.PNG')
-dirt_texture = load_texture('C:/Users/khooy/OneDrive/Documents/Python/Assets/Textures/Dirt_Block.PNG')
-stone_texture = load_texture('C:/Users/khooy/OneDrive/Documents/Python/Assets/Textures/Stone_Block.PNG')
-hand_texture = load_texture('C:/Users/khooy/OneDrive/Documents/Python/Assets/Textures/Hand.PNG')
+grass_texture = load_texture('Assets/Grass_Block.PNG')
+dirt_texture = load_texture('Assets/Dirt_Block.PNG')
+stone_texture = load_texture('Assets/Stone_Block.PNG')
+hand_texture = load_texture('Assets/Hand.PNG')
 
 blockpick = 1
 def update():
@@ -35,7 +35,7 @@ class Voxel(Button):
             highlight_color = color.lime,
             scale = 0.5
             )
-    
+        print(self.model)
     def input(self,key):
         if self.hovered:
             if key == 'right mouse down':
