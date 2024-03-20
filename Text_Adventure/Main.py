@@ -731,7 +731,6 @@ def fightenemy(Weapon,Player,Enemy):
 ## Past this point is the main map controls ##
 
 def map(countmap,pos):
-
     if pos == [5,36]:
         sleep = 0.1
     else:
@@ -837,7 +836,8 @@ def story_progressfier(Storystate,pos):
 def Var_declaration():
     #Placed key variables in a function to allow the whole game to reset as well as saving.
     Storystate=4
-    pos=[5,17]
+    #[5,17]
+    pos=[5,36]
 
     return Storystate, pos
 
